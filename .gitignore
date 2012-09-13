@@ -1,0 +1,8 @@
+[Bb]in/
+[Oo]bj/
+*.user
+*.[Rr]e[Ss]harper
+ClientBin/
+/_*
+packages/
+*.suo
