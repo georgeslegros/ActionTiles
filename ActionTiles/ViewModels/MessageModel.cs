@@ -41,4 +41,47 @@ namespace ActionTiles.ViewModels
     {
         Text
     }
+
+    public class ActionTile
+    {
+        public TileType TileType { get; set; }
+        public string Name { get; set; }
+    }
+
+    public class MessageTile:ActionTile
+    {
+        public MessageTile()
+        {
+            TileType = TileType.Message;
+        }
+    }
+
+    public class DialTile : ActionTile
+    {
+        public DialTile()
+        {
+            TileType = TileType.Dial;
+        }
+    }
+
+    public class BluetoothTile : ActionTile
+    {
+        public BluetoothTile()
+        {
+            TileType = TileType.Bluetooth;
+        }
+    }
+
+    public enum TileType
+    {
+        Message,
+        Dial,
+        Email,
+        Search,
+        Browse,
+        Wifi,
+        Cellular,
+        Bluetooth,
+        Airplane
+    }
 }

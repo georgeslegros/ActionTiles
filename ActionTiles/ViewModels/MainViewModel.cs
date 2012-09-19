@@ -56,4 +56,26 @@ namespace ActionTiles.ViewModels
             }
         }
     }
+
+    public class MasterModel
+    {
+        
+    }
+
+    public abstract class TileModel : ViewModelBase
+    {
+        
+        private TileType tileType;
+        public TileType TileType
+        {
+            get { return tileType; }
+            set { Set(ref tileType, value, () => TileType); }
+        }
+
+        //public TileType TileType { get; set; }
+
+        public string Name { get; set; }
+
+        public string Path { get; set; }
+    }
 }
