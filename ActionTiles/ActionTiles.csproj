@@ -77,6 +77,8 @@
     <Compile Include="SaveMessageName.xaml.cs">
       <DependentUpon>SaveMessageName.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Utils\EnumHelper.cs" />
+    <Compile Include="Utils\ExtensionMethods.cs" />
     <Compile Include="Utils\FileHelper.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\MessageModel.cs" />
