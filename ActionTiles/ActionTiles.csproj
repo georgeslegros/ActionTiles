@@ -69,6 +69,9 @@
     </Compile>
     <Compile Include="Controls\PickerBoxDialog.cs" />
     <Compile Include="Controls\TiltEffect.cs" />
+    <Compile Include="Create.xaml.cs">
+      <DependentUpon>Create.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DetailsPage.xaml.cs">
       <DependentUpon>DetailsPage.xaml</DependentUpon>
     </Compile>
@@ -78,21 +81,29 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MVVM\ViewPresenter.cs" />
+    <Compile Include="MVVM\DataTemplateSelector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SaveMessageName.xaml.cs">
       <DependentUpon>SaveMessageName.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TileTypeTemplateSelector.cs" />
     <Compile Include="Utils\EnumHelper.cs" />
     <Compile Include="Utils\ExtensionMethods.cs" />
     <Compile Include="Utils\FileHelper.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\MessageModel.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="Create.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="DetailsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
